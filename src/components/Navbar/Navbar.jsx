@@ -15,7 +15,7 @@ import SocialLinks from './SocialLinks/SocialLinks';
 function Navbar() {
     const [isNavActive, setIsNavActive] = useState(false);
     const [showHamburgerMenu, setShowHamburgerMenu] = useState(window.innerWidth < 680);
-    const [allowPadding, setAllowPadding] = useState(window.innerWidth < 992);
+    const [allowMarginLeft, setAllowMarginLeft] = useState(window.innerWidth < 992);
     const [height, setHeight] = useState(window.innerHeight);
 
     const handleClick = () => setIsNavActive(prevState => !prevState);
@@ -23,7 +23,7 @@ function Navbar() {
     useEffect(() => {
         function addResizeEventListener() {
             setShowHamburgerMenu(window.innerWidth < 680);
-            setAllowPadding(window.innerWidth < 992);
+            setAllowMarginLeft(window.innerWidth < 992);
             setHeight(window.innerHeight);
         }
 
@@ -37,7 +37,7 @@ function Navbar() {
     return (
         <nav>
             <NavInactiveContainer isNavActive={isNavActive}>
-                <NavInactive allowPadding={allowPadding} showHamburgerMenu={showHamburgerMenu}>                    
+                <NavInactive allowMarginLeft={allowMarginLeft} showHamburgerMenu={showHamburgerMenu}>                    
                     <NavUtil isNavActive={isNavActive} icon={hamburgerMenu} handleClick={handleClick} />
                     <div className='navigation-links'>                        
                         <NavLinksUtil />

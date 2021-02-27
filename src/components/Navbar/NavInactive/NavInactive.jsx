@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const NavInactive = styled.div`
     display: flex;
     justify-content: space-between;
-    padding: ${props => props.allowPadding ? '30px 20px' : 0};
     .hamburger-menu {
         display: ${props => props.showHamburgerMenu ? 'block' : 'none'};
     }
@@ -15,7 +14,7 @@ const NavInactive = styled.div`
             padding-left: 0;
             li {
                 display: inline-block;
-                margin-left: ${props => props.allowPadding ? '20px' : '50px'};
+                margin-left: ${props => props.allowMarginLeft ? '20px' : '50px'};
                 a {
                     font-size: 0.8rem;
                     color: hsl(229, 31%, 21%);
