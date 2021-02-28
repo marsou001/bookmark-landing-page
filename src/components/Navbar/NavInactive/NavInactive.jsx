@@ -4,7 +4,7 @@ const NavInactive = styled.div`
     display: flex;
     justify-content: space-between;
     .hamburger-menu {
-        display: ${props => props.showHamburgerMenu ? 'block' : 'none'};
+        display: ${props => props.showHamburgerMenu && !props.isNavActive ? 'block' : 'none'};
     }
     .navigation-links {
         display: ${props => props.showHamburgerMenu ? 'none' : 'block'};

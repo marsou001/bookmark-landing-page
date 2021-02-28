@@ -9,6 +9,7 @@ const NavActiveContainer = styled.div`
     width: 100vw;
     height: 100vh;
     overflow: scroll;
+    z-index: 1;
 `;
 
 export default NavActiveContainer;

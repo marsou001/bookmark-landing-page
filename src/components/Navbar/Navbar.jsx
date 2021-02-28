@@ -5,7 +5,6 @@ import iconFacebook from '../../images/icon-facebook.svg';
 import iconTwitter from '../../images/icon-twitter.svg';
 import NavUtil from './NavUtil/NavUtil';
 import NavLinksUtil from './NavLinksUtil/NavLinksUtil';
-import NavInactiveContainer from './NavInactiveContainer/NavInactiveContainer';
 import NavInactive from './NavInactive/NavInactive';
 import NavActiveContainer from './NavActiveContainer/NavActiveContainer';
 import NavActive from './NavActive/NavActive';
@@ -36,14 +35,14 @@ function Navbar() {
 
     return (
         <nav>
-            <NavInactiveContainer isNavActive={isNavActive}>
-                <NavInactive allowMarginLeft={allowMarginLeft} showHamburgerMenu={showHamburgerMenu}>                    
+            <div>           
+                <NavInactive allowMarginLeft={allowMarginLeft} isNavActive={isNavActive} showHamburgerMenu={showHamburgerMenu}>                    
                     <NavUtil isNavActive={isNavActive} icon={hamburgerMenu} handleClick={handleClick} />
                     <div className='navigation-links'>                        
                         <NavLinksUtil />
                     </div>
                 </NavInactive>
-            </NavInactiveContainer>                
+            </div>
             <NavActiveContainer isNavActive={isNavActive}>        
                 <NavActive>                    
                     <NavUtil isNavActive={isNavActive} icon={iconClose} handleClick={handleClick} />
@@ -55,7 +54,7 @@ function Navbar() {
                     <div><img src={iconFacebook} alt='' /></div>
                     <div><img src={iconTwitter} alt='' /></div>
                 </SocialLinks>
-            </NavActiveContainer>
+            </NavActiveContainer>        
         </nav>
     )
 }
