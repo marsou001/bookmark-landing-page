@@ -8,7 +8,7 @@ function marginTop(props) {
 
 const Container = styled.div`
     text-align: center;
-    max-width: 400px;
+    max-width: 450px;
     margin: auto;
     margin-top: ${marginTop};
     padding: 0 5%;
