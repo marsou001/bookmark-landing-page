@@ -6,6 +6,7 @@ import QuestionField from './QuestionField/QuestionField';
 import Question from './Question/Question';
 import Arrow from './Arrow/Arrow';
 import Answer from './Answer/Answer';
+import MoreInfo from './MoreInfo/MoreInfo';
 
 const questions = [
     {
@@ -83,6 +84,7 @@ function Questions() {
                     </QuestionContainer>
                 ))}
             </QuestionsContainer>
+            <MoreInfo>More info</MoreInfo>
         </>
     )
 }
