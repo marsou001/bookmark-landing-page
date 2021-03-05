@@ -7,7 +7,8 @@ const InputEmail = styled.input`
         outline: none;
     }
     &::placeholder {
-        color: rgba(0, 0, 0, 0.2);
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.3);
     }
     @media (min-width: 500px) {
         display: inline-block;
