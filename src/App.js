@@ -5,6 +5,7 @@ import Features from './components/Features/Features';
 import Extensions from './components/Extensions/Extensions';
 import Questions from './components/Questions/Questions';
 import EmailList from './components/EmailList/EmailList';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Extensions />
       <Questions />
       <EmailList />
+      <Footer />
     </>
   );
 }
