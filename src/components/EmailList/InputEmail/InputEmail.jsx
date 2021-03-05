@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 const InputEmail = styled.input`
     ${props => props.buttonStyle}
+    position: relative;
+    z-index: 1;
     &:focus {
         border-color: hsl(0, 94%, 66%);
         outline: none;
@@ -9,11 +11,6 @@ const InputEmail = styled.input`
     &::placeholder {
         font-weight: 600;
         color: rgba(0, 0, 0, 0.3);
-    }
-    @media (min-width: 500px) {
-        display: inline-block;
-        width: 60%;
-        margin-right: 10px;
-    }
+    }        
 `;
 export default InputEmail;
