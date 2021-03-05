@@ -1,6 +1,3 @@
-import styled from 'styled-components';
-import iconFacebook from '../../images/icon-facebook.svg';
-import iconTwitter from '../../images/icon-twitter.svg';
 import LogoBookmark from './LogoBookmark/LogoBookmark';
 import FooterContainer from './FooterContainer/FooterContainer';
 import FooterGroup from './FooterGroup/FooterGroup';
@@ -18,10 +15,7 @@ function Footer() {
                     <NavigationLinksItem href=''>Pricing</NavigationLinksItem>
                     <NavigationLinksItem href=''>Contact</NavigationLinksItem>
                 </NavigationLinks>
-                <SocialLinks>
-                    <a href=''><img src={iconFacebook} alt='' /></a>
-                    <a href=''><img src={iconTwitter} alt='' /></a>
-                </SocialLinks>
+                <SocialLinks />
             </FooterGroup>
         </FooterContainer>
     )
