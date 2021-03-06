@@ -36,8 +36,15 @@ const DownloadButton = styled.a`
     margin: 25px;
     margin-top: 0px;
     padding: 15px 0px;
+    border: 2px solid hsla(231, 69%, 60%, 0);
     border-radius: 6px;
     box-sizing: border-box;
+    cursor: pointer;
+    &:hover {
+        color: hsl(231, 69%, 60%);
+        background-color: #fff;
+        border: 2px solid hsla(231, 69%, 60%, 1);
+    }
     @media (min-width: 992px) {
         font-size: 1rem;
     }
