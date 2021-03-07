@@ -10,6 +10,7 @@ function translate(props) {
 
 const CardContainer = styled.div`
     text-align: center;    
+    width: 100%;
     max-width: 285px;
     margin: auto;
     margin-bottom: 45px;
