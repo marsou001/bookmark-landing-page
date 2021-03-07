@@ -73,12 +73,12 @@ function Questions() {
             <Text header={header} paragraph={paragraph} />
             <QuestionsContainer>
                 {questions.map((question) => (
-                    <QuestionContainer key={question.id}>
+                    <QuestionContainer key={question.id} isActive={isActive && (selected === question.id)}>
                         <QuestionField data-id={question.id} onClick={handleClick}>
                             <Question data-id={question.id}>{question.question}</Question>
                             <Arrow QuestionId={question.id} isActive={isActive && (selected === question.id)} />
                         </QuestionField>
-                        <Answer isActive={isActive && (selected === question.id)}>
+                        <Answer>
                             {question.answer}
                         </Answer>
                     </QuestionContainer>

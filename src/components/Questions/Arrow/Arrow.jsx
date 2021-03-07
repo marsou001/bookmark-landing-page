@@ -1,6 +1,7 @@
 function Arrow({ QuestionId, isActive }) {
     const rotateStyle = {
-        transform: isActive ? 'rotate(180deg)' : 'none'
+        transform: isActive ? 'rotate(180deg)' : 'none',
+        transition: 'transform 0.3s'
     }
 
     return (
