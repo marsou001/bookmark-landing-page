@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { createGlobalStyle } from 'styled-components';
 import hamburgerMenu from '../../images/icon-hamburger.svg';
 import iconClose from '../../images/icon-close.svg';
 import iconFacebook from '../../images/icon-facebook.svg';
@@ -10,6 +11,12 @@ import NavActiveContainer from './NavActiveContainer/NavActiveContainer';
 import NavActive from './NavActive/NavActive';
 import NavigationLinks from './NavigationLinks/NavigationLinks';
 import SocialLinks from './SocialLinks/SocialLinks';
+
+const GlobalStyles = createGlobalStyle`
+    body {
+        overflow-y: ${props => props.isNavActive ? 'hidden' : 'initial'};
+    }
+`;
 
 function Navbar() {
     const [isNavActive, setIsNavActive] = useState(false);
@@ -35,6 +42,7 @@ function Navbar() {
 
     return (
         <nav>
+            <GlobalStyles isNavActive={isNavActive} />
             <div>           
                 <NavInactive allowMarginLeft={allowMarginLeft} isNavActive={isNavActive} showHamburgerMenu={showHamburgerMenu}>                    
                     <NavUtil isNavActive={isNavActive} icon={hamburgerMenu} handleClick={handleClick} />

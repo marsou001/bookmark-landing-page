@@ -8,7 +8,7 @@ const NavActiveContainer = styled.div`
     display: ${props => props.isNavActive ? 'block': 'none'};
     width: 100vw;
     height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
     z-index: 1;
 `;
 
