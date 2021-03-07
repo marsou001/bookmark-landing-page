@@ -21,15 +21,25 @@ const NavInactive = styled.div`
                     text-decoration: none;
                     text-transform: uppercase;
                     letter-spacing: 0.1rem;
+                    &:hover {
+                        color: hsl(0, 94%, 66%);
+                    }   
                 }
             }
             li:last-child {
                 box-shadow: 1px 12px 3px rgba(0, 0, 0, 0.1);
                 a {
+                    font-weight: 500;
                     color: #fff;
                     background-color: hsl(0, 94%, 66%);
                     padding: 10px 30px;
-                    border-radius: 5px;
+                    border: 2px solid hsla(0, 94%, 66%, 0);
+                    border-radius: 5px;                    
+                    &:hover {
+                        color: hsl(0, 94%, 66%);
+                        background-color: #fff;
+                        border: 2px solid hsla(0, 94%, 66%, 1);
+                    }   
                 }
             }
         }

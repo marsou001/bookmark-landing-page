@@ -16,7 +16,8 @@ function IconTwitter({ isActive, handleMouseOver, handleMouseOut }) {
 const SocialLinksContainer = styled.div`
     margin-top: 25px;    
     svg {
-        margin: 0 15px;        
+        margin: 0 15px;    
+        cursor: pointer;    
     }    
     @media (min-width: 992px) {
         margin-top: 0;

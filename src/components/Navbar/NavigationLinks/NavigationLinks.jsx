@@ -15,7 +15,7 @@ const NavigationLinks = styled.div`
                 color: rgba(255, 255, 255, 0.8);
                 text-decoration: none; 
                 text-transform: uppercase;     
-                letter-spacing: 0.2rem;                          
+                letter-spacing: 0.2rem;                                       
             }  
             &:last-child {
                 padding: 25px 0;

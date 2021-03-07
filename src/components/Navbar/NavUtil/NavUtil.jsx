@@ -1,6 +1,6 @@
 import LogoBookmark from '../LogoBookmark/LogoBookmark';
 
-function NavUtil ({ isNavActive, icon, handleClick }) {
+function NavUtil({ isNavActive, icon, handleClick }) {
     return (
         <>
             <div className='logo'>
