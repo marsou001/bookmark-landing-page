@@ -45,7 +45,7 @@ const questions = [
 
 const header = 'Frequently Asked Questions';
 
-const paragraph = `Here qre some of our FQAs. If you have any other questions you'd like answered
+const paragraph = `Here are some of our FAQs. If you have any other questions you'd like answered
                    please feel free to email us.`;
 
 function Questions() {
