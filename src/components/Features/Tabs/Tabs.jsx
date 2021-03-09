@@ -45,7 +45,7 @@ const TabsItem = styled.li`
     }
     `;
     
-const Hr = styled.hr`
+const UnderTab = styled.div`
     background-color: hsl(0, 94%, 66%);
     width: 80%;
     height: 3px;
@@ -84,7 +84,7 @@ function Tabs({ selectedTab, handleClick }) {
                         <TabsItem key={tab.id} isSelected={selectedTab === tab.text}>
                             <span>
                                 {tab.text}
-                                <Hr isSelected={selectedTab === tab.text} />
+                                <UnderTab isSelected={selectedTab === tab.text} />
                             </span>
                         </TabsItem>
                     ))}
