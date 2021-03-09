@@ -16,12 +16,12 @@ const headers = {
 }
 
 const paragraphs = {
-    paragraph1: `organise your bookmarks however you like.
+    paragraph1: `Organise your bookmarks however you like.
                  Our simple drag-and-drop interface gives you complete
                  control over how you manage your favourite sites.`,
     paragraph2: `Our powerful search feature will help you find saved sites in no time at all. 
                  No need to trawl through all of your bookmarks.`,
-    paragraph3: `share your bookmarks and collections with others. 
+    paragraph3: `Share your bookmarks and collections with others. 
                  Create a shareable link that you can send at the click of a button.`,
 }
 
