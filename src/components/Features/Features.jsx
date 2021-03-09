@@ -4,11 +4,6 @@ import { useState } from 'react';
 import Tabs from './Tabs/Tabs.jsx';
 import Main from './Main/Main.jsx';
 
-// const header = 'Bookmark in one click';
-// const paragraph = `Organise your bookmarks however you like.
-//                    Our simple drag-and-drop interface gives you complete
-//                    control over how you manage your favourite sites.`;
-
 const headers = {
     header1: 'Bookmark in one click',
     header2: 'Intelligent search',
